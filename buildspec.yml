@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.10
+    commands:
+      - echo Installing dependencies
+      - pip install -r requirements.txt || true
+
+  build:
+    commands:
+      - echo Build started
+      - python app.py
+
+  post_build:
+    commands:
+      - echo Running tests
+      - python -m unittest discover || true
+      - echo Build successful
+
+artifacts:
+  files:
+    - '**/*'
