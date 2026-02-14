@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Starting deployment stage"
+      - echo "Connecting to production server..."
+      - echo "Pulling latest code..."
+      - echo "Running application..."
+      - echo "Deployment successful!"
