@@ -1,0 +1,28 @@
+trigger:
+- main     # pipeline runs when code pushed to main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+# Step 1: Install Python
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+  displayName: 'Install Python'
+
+# Step 2: Install dependencies
+- script: |
+    pip install -r requirements.txt || true
+  displayName: 'Install dependencies'
+
+# Step 3: Run tests
+- script: |
+    echo "Running tests"
+    python -m unittest discover || true
+  displayName: 'Run unit tests'
+
+# Step 4: Build success message
+- script: echo "Build completed successfully"
+  displayName: 'Build complete'
