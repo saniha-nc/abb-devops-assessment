@@ -1,0 +1,1 @@
+Implemented secure secrets management using AWS Secrets Manager integrated with CI/CD pipeline. Secrets are securely retrieved during pipeline execution and used in deployment without exposing sensitive data in code.
