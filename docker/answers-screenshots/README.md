@@ -1,0 +1,1 @@
+Created Dockerfile for application and built container image using AWS CodeBuild. Image successfully pushed to AWS Elastic Container Registry (ECR), demonstrating containerization and registry integration.
