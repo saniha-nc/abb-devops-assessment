@@ -16,4 +16,4 @@ This repository contains solutions for the DevOps assessment implemented using A
 - Monitoring setup using AWS CloudWatch with alerts
 - Security scanning integrated into CI/CD pipeline
 
-All tasks have been implemented using AWS services, and supporting configuration files, scripts, and screenshots are included wherever applicable.
+All tasks have been implemented using AWS services and supporting configuration files, scripts and screenshots are included wherever applicable.
