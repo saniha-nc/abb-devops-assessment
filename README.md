@@ -1,17 +1,19 @@
-# abb-devops-assessment
-ABB DevOps Assessment Repository
+# ABB DevOps Assessment Repository
 
-This repository contains solutions for the DevOps assessment.
+This repository contains solutions for the DevOps assessment implemented using AWS services.
 
-Tasks covered:
-- Git branching strategy
-- CI/CD pipelines
-- Terraform AKS infrastructure
-- Docker containerization
-- Kubernetes deployment
-- Helm charts
-- Security scanning
-- Monitoring and logging
-- Troubleshooting scenarios
+## Tasks Covered
 
-Due to Azure subscription limitations, infrastructure code and configurations are provided along with explanations and screenshots where applicable.
+- Git branching strategy and workflow
+- CI pipeline implementation using AWS CodePipeline & CodeBuild
+- CD pipeline implementation in AWS
+- Multi-stage CI/CD pipeline (Dev, QA, Prod)
+- Terraform infrastructure provisioning (AWS EC2)
+- Secrets management using AWS Secrets Manager integrated with CI/CD
+- Docker containerization and image push to AWS ECR
+- Kubernetes deployment YAML with readiness and liveness probes
+- Helm chart creation and packaging
+- Monitoring setup using AWS CloudWatch with alerts
+- Security scanning integrated into CI/CD pipeline
+
+All tasks have been implemented using AWS services, and supporting configuration files, scripts, and screenshots are included wherever applicable.
